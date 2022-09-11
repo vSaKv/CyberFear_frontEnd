@@ -7,6 +7,7 @@ define(['app', 'backbone', 'react', 'jquery', 'bootstrap', 'cmpld/splashPage/Spl
 			"PE": "payend",
 			"report": "report",
 			"login": "login",
+			"auth/login": "authLogin",
 			"createUser": "createUser",
 			"contactUs": "contactUs",
 			"requestInvitation": "requestInvitation",
@@ -86,6 +87,10 @@ define(['app', 'backbone', 'react', 'jquery', 'bootstrap', 'cmpld/splashPage/Spl
 		},
 		donate: function () {
 			React.render(React.createElement(SplashCollection, { page: 'donate' }), document.getElementById('mainBody'));
+		},
+
+		authLogin: function () {
+			React.render(React.createElement(SplashCollection, { page: 'index' }), document.getElementById('mainBody'));
 		},
 
 		login: function () {
